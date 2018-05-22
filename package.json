@@ -4,13 +4,7 @@
   "description": "## 1. Installation for Node.js dependencies  ```sh $npm install ````",
   "main": "Gruntfile.js",
   "dependencies": {
-    "bluebird": "^3.4.6",
-    "claudia": "^2.3.0",
-    "csso": "^3.0.1",
-    "express": "^4.16.3",
-    "grunt": "^0.4.5",
-    "gulp": "^3.9.1",
-    "html-minifier": "^3.4.3"
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

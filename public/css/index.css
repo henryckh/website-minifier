@@ -1,0 +1,21 @@
+body {
+    padding-top: 10rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .logo {
+    width: 300px;
+}
+
+.header h1 {
+    color: dimgrey;
+    text-align: center;
+}
+
+.header p {
+    color: grey;
+    text-align: center;
+}

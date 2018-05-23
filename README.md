@@ -1,5 +1,5 @@
 # website-minifier
-`website-minifier` is an example on how to use different gulp dependencies to minimize Javascript, CSS, Html.  
+`website-minifier` is an example on how to use different gulp dependencies to minimize Javascript, CSS, HTML.  
  You can keep a copy of original Javascript, HTML, CSS while outputting the minimized Javascript, HTML, CSS to /build.  
  [Gulp](https://github.com/gulpjs/gulp) is a powerful toolkit for automation.
 
@@ -9,7 +9,6 @@ $npm install
 ````
 
 ## Example Usage
-
 ```js
 // minify and move css from public to build/css 
 gulp.task('minify-css', function () {
@@ -19,7 +18,7 @@ gulp.task('minify-css', function () {
 });
 
 // minify and move js from public to build/js-files
-gulp.task('minify-js', fuexclude () {
+gulp.task('minify-js', function () {
     return gulp.src('public/js-files/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('build/js-files'));
@@ -56,10 +55,6 @@ $gulp build
 ## Run Website and Inspect the different
 ```sh
 $npm start
-```
-or 
-```sh
-$node server.js
 ```
 Original Website: http://localhost:3000
 Minimized Website: http://localhost:3000/build

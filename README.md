@@ -44,6 +44,12 @@ gulp.task('move', function () {
    ])
        .pipe(gulp.dest('build'))
 });
+
+gulp.task('minify', ['minify-js', 'minify-css', 'minify-html']);
+```
+and run the script with the command as defined above
+```
+$gulp minify 
 ```
 
 ## Build the website to /build directory

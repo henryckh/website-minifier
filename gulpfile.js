@@ -36,5 +36,5 @@ gulp.task('move', function () {
        .pipe(gulp.dest('build'))
 });
 
-gulp.task('minify', ['minify-js', 'minify-css', 'minify-html']);
-gulp.task('build', ['minify', 'move']);
+gulp.task('minify', gulp.parallel('minify-js', 'minify-css', 'minify-html'));
+gulp.task('build', gulp.series('minify', 'move'));

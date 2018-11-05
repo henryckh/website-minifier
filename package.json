@@ -4,12 +4,12 @@
   "description": "## 1. Installation for Node.js dependencies  ```sh $npm install ````",
   "main": "Gruntfile.js",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "gulp-htmlmin": "^5.0.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean-css": "^3.7.0",
-    "gulp-htmlmin": "^3.0.0",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2"
   },

@@ -3,10 +3,19 @@
  You can keep a copy of original Javascript, HTML, CSS while outputting the minimized Javascript, HTML, CSS to /build.  
  [Gulp](https://github.com/gulpjs/gulp) is a powerful toolkit for automation.
 
+This project requires gulp >= 4.0.0
+
 ## Installation 
 ```sh
 $npm install
 ````
+
+and recommend to install globally gulp
+
+```sh
+$npm install -g gulp
+```
+
 
 ## Example Usage
 ```js
@@ -45,17 +54,33 @@ gulp.task('move', function () {
        .pipe(gulp.dest('build'))
 });
 
-gulp.task('minify', ['minify-js', 'minify-css', 'minify-html']);
+gulp.task('minify', gulp.parallel('minify-js', 'minify-css', 'minify-html'));
+gulp.stak('build', gulp.series('minify', 'move'));
 ```
-and run the script with the command as defined above
-```
+and run the script with the command as defined above if you have  
+gulp installed globallyi
+
+```sh
 $gulp minify 
 ```
 
+else run 
+
+```sh
+./node_modules/.bin/gulp minify
+```
+
 ## Build the website to /build directory
+
 Build the minify css, javascript and html to /build.
 ```sh
 $gulp build
+```
+
+or 
+
+```sh
+$./node_modules/.bin/gulp build
 ```
 
 ## Run Website and Inspect the different

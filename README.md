@@ -58,7 +58,7 @@ gulp.task('minify', gulp.parallel('minify-js', 'minify-css', 'minify-html'));
 gulp.stak('build', gulp.series('minify', 'move'));
 ```
 and run the script with the command as defined above if you have  
-gulp installed globallyi
+gulp installed globally
 
 ```sh
 $gulp minify 

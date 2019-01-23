@@ -67,6 +67,12 @@ $gulp minify
 else run 
 
 ```sh
+$npx gulp minify
+```
+
+or
+ 
+```sh
 ./node_modules/.bin/gulp minify
 ```
 
